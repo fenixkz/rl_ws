@@ -1,0 +1,2 @@
+cam_pkg:gazebo_robot:gym-dof5:robot_control:robot_description:train
+-DCATKIN_DEVEL_PREFIX=/home/arms/rl_ws/devel -DCMAKE_INSTALL_PREFIX=/home/arms/rl_ws/install -G Unix Makefiles
