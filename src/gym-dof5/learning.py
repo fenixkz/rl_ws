@@ -9,11 +9,12 @@ if __name__ == '__main__':
     qlearn = qlearn.QLearn(actions=range(env.action_space.n),
                     alpha=0.1, gamma=0.9, epsilon=0.9)
     highest_reward = 0
-    f = open("actions.txt", "w+")
+    f = open("qtable.txt", "w+")
+    fa = open("actions.txt", "w+")
     result = []
     episode = []
     act = list()
-    for x in range(5000):
+    for x in range(10):
         act1 = list()
         total_reward = 0
         if (x == 0):
@@ -24,7 +25,7 @@ if __name__ == '__main__':
         if qlearn.epsilon > 0.02:
             qlearn.epsilon *= 0.9991
         print(qlearn.epsilon)
-        for i in range(100):
+        for i in range(10):
             print("New step "+str(i))
             action = qlearn.chooseAction(state)
             act1.append(action)
@@ -44,7 +45,9 @@ if __name__ == '__main__':
         episode.append(x)
         result.append(total_reward)
         print("Episode #"+str(x)+" has ended, total reward is "+str(total_reward))
-    f.write(str(act))
+    fa.write(str(act))
+    f.write(str(qlearn.q))
     f.close()
+    fa.close()
     plt.plot(episode, result)
     plt.show()
