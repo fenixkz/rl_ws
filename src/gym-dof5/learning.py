@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 if __name__ == '__main__':
     env = gym.make('Planar5DoF-v0')
     qlearn = qlearn.QLearn(actions=range(env.action_space.n),
-                    alpha=0.1, gamma=0.9, epsilon=0.9)
+                    alpha=0.9, gamma=0.1, epsilon=0.1)
     highest_reward = 0
     f = open("qtable.txt", "w+")
     fa = open("actions.txt", "w+")
