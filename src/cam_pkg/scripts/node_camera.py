@@ -31,9 +31,9 @@ def callback(data):
     if (coord_x < 130 and coord_x > 100 and coord_y < 130 and coord_y > 100):
         done = True
     if (done):
-        cv2.rectangle(cv_image,(100,100),(130,130),(0,255,0),3)
+        cv2.rectangle(cv_image,(100,100),(230,230),(0,255,0),3)
     else:
-        cv2.rectangle(cv_image,(100,100),(130,130),(0,0,255),3)
+        cv2.rectangle(cv_image,(100,100),(230,230),(0,0,255),3)
     image_pub.publish(bridge.cv2_to_imgmsg(cv_image, "bgr8"))
     done_pub.publish(Bool(done))
 
