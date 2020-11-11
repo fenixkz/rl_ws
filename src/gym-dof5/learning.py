@@ -14,7 +14,7 @@ if __name__ == '__main__':
     result = []
     episode = []
     act = list()
-    for x in range(10):
+    for x in range(5000):
         act1 = list()
         total_reward = 0
         if (x == 0):
@@ -25,7 +25,7 @@ if __name__ == '__main__':
         if qlearn.epsilon > 0.02:
             qlearn.epsilon *= 0.9991
         print(qlearn.epsilon)
-        for i in range(10):
+        for i in range(100):
             print("New step "+str(i))
             action = qlearn.chooseAction(state)
             act1.append(action)
