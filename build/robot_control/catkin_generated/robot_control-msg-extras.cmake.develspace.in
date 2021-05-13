@@ -1,2 +1,0 @@
-set(robot_control_MESSAGE_FILES "/home/arms/rl_ws/src/robot_control/msg/coord.msg;/home/arms/rl_ws/src/robot_control/msg/state.msg;/home/arms/rl_ws/src/robot_control/msg/accelerometr.msg;/home/arms/rl_ws/src/robot_control/msg/tactile.msg;/home/arms/rl_ws/src/robot_control/msg/rigid.msg;/home/arms/rl_ws/src/robot_control/msg/fsrInput.msg;/home/arms/rl_ws/src/robot_control/msg/newtactile.msg;/home/arms/rl_ws/src/robot_control/msg/contact.msg")
-set(robot_control_SERVICE_FILES "")
