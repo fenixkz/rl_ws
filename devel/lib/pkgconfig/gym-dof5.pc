@@ -1,8 +1,0 @@
-prefix=/home/arms/rl_ws/devel
-
-Name: gym-dof5
-Description: Description of gym-dof5
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

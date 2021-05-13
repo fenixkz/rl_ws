@@ -1,8 +1,0 @@
-prefix=/home/arms/rl_ws/devel
-
-Name: train
-Description: Description of train
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
